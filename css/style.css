@@ -1,0 +1,396 @@
+@font-face {
+  font-family: "Gilroy";
+  src:  local("Gilroy"),
+        url("../fonts/gilroylight.woff2") format("woff2"),
+        url("../fonts/gilroylight.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src:  local("Gilroy"),
+        url("../fonts/gilroyextrabold.woff2") format("woff2"),
+        url("../fonts/gilroyextrabold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src:  local("Open Sans"),
+        url("../fonts/opensanslight.woff2") format("woff2"),
+        url("../fonts/opensanslight.woff") format("woff");
+        font-weight: 300;
+        font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src:  local("Open Sans"),
+        url("../fonts/opensans.woff2") format("woff2"),
+        url("../fonts/opensans.woff") format("woff");
+        font-weight: 400;
+        font-style: normal;
+}
+
+/* @font-face {
+  font-family: "Gilroy";
+  src:  local("Gilroy"),
+        url("../fonts/gilroylight.woff2") format("woff2"),
+        url("../fonts/gilroylight.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src:  local("Gilroy"),
+        url("../fonts/Gilroy-Extrabold.woff2") format("woff2"),
+        url("../fonts/Gilroy-Extrabold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+} */
+
+:root {
+  --basic-black: #000000;
+  --basic-white: #FFFFFF;
+
+
+  --special-yellow: #F7E296;
+
+  --opacity-black: rgba(0, 0, 0, 30%);
+}
+
+
+
+/* global */
+
+.page {
+  font-family: "Open Sans";
+  color: var(--basic-black);
+  font-style: normal;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 300;
+}
+
+.bold-text {
+  font-family: "Gilroy";
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 800;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1;
+  height: 1;
+  margin: -1;
+  padding: 0;
+  clip: rect(0 0 0 0);
+}
+
+.layout-positioner {
+  width: 1160px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* === global === */
+
+
+
+.main-navigation {
+  position: relative;
+  background-color: var(--special-yellow);
+  margin-top: 39px;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-bottom: 50px;
+}
+
+.main-logo {
+  position: absolute;
+  top: -19px;
+  left: 60px;
+}
+
+
+.user__nav {
+  list-style: none;
+  padding: 0;
+  padding-top: 46px;
+  margin: 0;
+  margin-bottom: 49px;
+
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+}
+
+.nav-finder-input {
+  padding: 0;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: inherit;
+  border: none;
+  font: inherit;
+
+  outline: 1px solid green;
+  outline-offset: -1px;
+}
+
+.nav-finder {
+  position: relative;
+  width: 480px;
+  padding-left: 38px;
+}
+
+.nav-finder::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  background-image: url("../img/icon-search.svg");
+  background-repeat: no-repeat;
+}
+
+.user__nav-user-link {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-left: 10px;
+  padding-left: 35px;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+
+  outline: 1px solid tomato;
+  outline-offset: -1px;
+}
+
+.user__nav-actions {
+  list-style: none;
+  padding: 0;
+  padding-left: 57px;
+  margin: 0;
+  margin-left: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  outline: 1px solid purple;
+  outline-offset: -1px;
+}
+
+.user-link {
+  position: relative;
+  margin-right: 20px;
+}
+
+.user-link::before {
+  content: "";
+  position: absolute;
+  left: -24px;
+  top: 3px;
+  width: 13px;
+  height: 14px;
+  background-image: url("../img/icon-user.svg");
+  background-repeat: no-repeat;
+}
+
+
+.actions-chart {
+  position: relative;
+}
+
+.actions-chart::before {
+  content: "";
+  position: absolute;
+  left: -25px;
+  top: 3px;
+  width: 14px;
+  height: 14px;
+  background-image: url("../img/icon-chart.svg");
+  background-repeat: no-repeat;
+}
+
+.actions-cart {
+  position: relative;
+}
+
+.actions-cart::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: -23px;
+  width: 10px;
+  height: 10px;
+  background-image: url("../img/icon-cart.svg");
+  background-repeat: no-repeat;
+}
+
+
+.shop__nav {
+  list-style: none;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 530px 139px 139px auto;
+  column-gap: 15px;
+  margin-right: -0.2em;
+}
+
+.catalog-link {
+  position: relative;
+}
+
+.catalog-link::after {
+  content: "";
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  right: -35px;
+  top: 0;
+  background-image: url("../img/icon-plus.svg");
+  background-repeat: no-repeat;
+}
+
+.shop__nav > li:last-child {
+  text-align: right;
+}
+
+
+.shop__nav-catalog {
+  outline: 1px solid tomato;
+  outline-offset: -1px;
+  position: relative;
+}
+
+.shop__nav-wrapper {
+  width: 1160px;
+  background-color: var(--special-yellow);
+  display: none;
+  position: absolute;
+  left: -60px;
+  padding-left: 60px;
+
+  padding-top: 32px;
+  padding-bottom: 43px;
+  box-sizing: border-box;
+  z-index: 5;
+}
+
+.shop__nav-list {
+  background-color: var(--special-yellow);
+
+  width: 545px;
+  box-sizing: border-box;
+  margin-top: 30px;
+
+  letter-spacing: 0px;
+  text-transform: none;
+
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: left;
+
+  display: grid;
+  grid-template-columns: auto auto auto;
+  row-gap: 16px;
+  column-gap: 40px;
+
+  font-family: "Open Sans";
+  color: var(--basic-black);
+  font-style: normal;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 300;
+
+  outline: 1px solid green;
+  outline-offset: -1px;
+}
+
+.catalog-link:hover + .shop__nav-wrapper,
+.shop__nav-catalog:hover  > .shop__nav-wrapper:hover,
+.shop__nav-catalog:focus-within > .shop__nav-wrapper {
+  display: block;
+}
+
+.shop__nav-list li {
+  padding: 0;
+  margin: 0;
+}
+
+.shop__nav-list li:last-child {
+  grid-row: 3 / 4;
+}
+
+
+
+.slider {
+  height: 506px;
+  outline: 2px solid darkblue;
+  outline-offset: -2px;
+  position: relative;
+  top: -32px;
+
+  background-image: url("../img/slider-silfie-stick.png");
+  background-repeat: no-repeat;
+  background-position: 90px 18px;
+}
+
+.slider__counter {
+  position: absolute;
+  height: 145px;
+  width: 100%;
+  box-sizing: border-box;
+  padding-right: 47px;
+  text-align: right;
+  background-color: var(--special-yellow);
+  z-index: -1;
+}
+
+.slider__counter-caption {
+  display: block;
+  font-family: "Gilroy";
+  color: var(--basic-white);
+  font-style: normal;
+  font-weight: 800;
+  font-size: 179px;
+  line-height: 219px;
+  text-transform: uppercase;
+}
+
+.slider__info {
+  width: 50%;
+  box-sizing: border-box;
+  outline: 2px solid darkolivegreen;
+  outline-offset: -2px;
+  margin-left: auto;
+
+  padding-top: 110px;
+  padding-left: 20px;
+  padding-right: 60px;
+}
+
+.slider__info-caption {
+  font-size: 47px;
+  line-height: 58px;
+  letter-spacing: 0em;
+}
+
+.slider__info-text {
+  margin-top: 27px;
+}

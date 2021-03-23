@@ -49,6 +49,8 @@
   --special-green: #91C92F;
   --toogle-gray: #C4C4C4;
 
+  --ligth-gray-modal: #F2F2F2;
+
 
 
 
@@ -63,7 +65,7 @@
 /* global */
 
 .page {
-  font-family: "Open Sans";
+  font-family: "Open Sans", "Arial", sans-serif;
   color: var(--basic-black);
   font-style: normal;
   font-size: 15px;
@@ -80,7 +82,7 @@
 }
 
 .bold-text {
-  font-family: "Gilroy";
+  font-family: "Gilroy", "Arial", sans-serif;
   font-size: 18px;
   line-height: 22px;
   font-weight: 800;
@@ -186,8 +188,8 @@ ul {
   border: none;
   font: inherit;
 
-  outline: 1px solid green;
-  outline-offset: -1px;
+  /* outline: 1px solid green;
+  outline-offset: -1px; */
 }
 
 .nav-finder {
@@ -217,8 +219,8 @@ ul {
   display: flex;
   flex-wrap: wrap;
 
-  outline: 1px solid tomato;
-  outline-offset: -1px;
+  /* outline: 1px solid tomato;
+  outline-offset: -1px; */
 }
 
 .user__nav-actions {
@@ -231,8 +233,8 @@ ul {
   flex-wrap: wrap;
   justify-content: space-between;
 
-  outline: 1px solid purple;
-  outline-offset: -1px;
+  /* outline: 1px solid purple;
+  outline-offset: -1px; */
 }
 
 .user-link {
@@ -316,8 +318,8 @@ ul {
 
 
 .shop__nav-catalog {
-  outline: 1px solid tomato;
-  outline-offset: -1px;
+  /* outline: 1px solid tomato;
+  outline-offset: -1px; */
   position: relative;
 }
 
@@ -355,15 +357,15 @@ ul {
   row-gap: 16px;
   column-gap: 40px;
 
-  font-family: "Open Sans";
+  font-family: "Open Sans", "Arial", sans-serif;
   color: var(--basic-black);
   font-style: normal;
   font-size: 15px;
   line-height: 20px;
   font-weight: 300;
 
-  outline: 1px solid green;
-  outline-offset: -1px;
+  /* outline: 1px solid green;
+  outline-offset: -1px; */
 }
 
 .catalog-link:hover + .shop__nav-wrapper,
@@ -386,8 +388,8 @@ ul {
 
 .slider {
   min-height: 506px;
-  outline: 2px solid darkblue;
-  outline-offset: -2px;
+  /* outline: 2px solid darkblue;
+  outline-offset: -2px; */
   position: relative;
   top: -145px;
   margin-bottom: -38px;
@@ -444,12 +446,12 @@ ul {
   padding-left: 20px;
   padding-right: 60px;
 
-  outline: 2px solid darkolivegreen;
-  outline-offset: -2px;
+  /* outline: 2px solid darkolivegreen;
+  outline-offset: -2px; */
 }
 
 .slider__counter-caption {
-  font-family: "Gilroy";
+  font-family: "Gilroy", "Arial", sans-serif;
   color: var(--basic-white);
   font-style: normal;
   font-weight: 800;
@@ -487,8 +489,8 @@ ul {
 }
 
 .slider__controls {
-  outline: 1px dashed pink;
-  outline-offset: -1px;
+  /* outline: 1px dashed pink;
+  outline-offset: -1px; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -534,12 +536,12 @@ ul {
   display: flex;
   flex-wrap: wrap;
 
-  font-family: "Gilroy";
+  font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 300;
   color: var(--basic-black);
 
-  outline: 1px solid violet;
-  outline-offset: -1px;
+  /* outline: 1px solid violet;
+  outline-offset: -1px; */
 }
 
 .slider__table > li {
@@ -574,15 +576,14 @@ ul {
 
 
 .page__catalog {
-  font-family: "Gilroy";
-  font-style: normal;
+  font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 22px;
   letter-spacing: 0.05em;
   margin-bottom: 69px;
 
-  outline: 1px solid green;
+  /* outline: 1px solid green; */
 }
 
 .page__catalog-list {
@@ -726,30 +727,23 @@ ul {
 
 .services__text-container {
   width: 575px;
-  /* margin-left: 116px; */
   margin-right: auto;
-  background-color: yellowgreen;
-  /* position: relative;
-  top: -57px; */
 }
 
 .services__text-container > h3 {
-  font-family: "Gilroy";
+  font-family: "Gilroy", "Arial", sans-serif;
   color: var(--basic-black);
   font-weight: 800;
   font-size: 47px;
-  /* line-height: 58px; */
-  /* identical to box height */
   letter-spacing: 0.2em;
 }
 
 .services__text-container > p {
   margin-top: 60px;
-  font-family: "Open Sans";
+  font-family: "Open Sans", "Arial", sans-serif;
   font-weight: 300;
   font-size: 15px;
   line-height: 30px;
-  /* or 200% */
   letter-spacing: 0.1em;
 }
 
@@ -827,7 +821,7 @@ ul {
   margin-bottom: 77px;
   grid-template-columns: 473px 560px;
   column-gap: 127px;
-  font-family: "Open Sans";
+  font-family: "Open Sans", "Arial", sans-serif;
   font-weight: 300;
   font-size: 15px;
   line-height: 28px;
@@ -835,7 +829,7 @@ ul {
 
 .about-us h2 {
   position: relative;
-  font-family: "Gilroy";
+  font-family: "Gilroy, "Arial", sans-serif";
   font-weight: 800;
   font-size: 47px;
   line-height: 58px;
@@ -870,7 +864,7 @@ ul {
 }
 
 .about-us__info-list {
-  font-family: "Gilroy";
+  font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
   font-size: 16px;
   line-height: 28px;
@@ -981,7 +975,7 @@ ul {
   display: grid;
   grid-template-columns: auto auto auto;
   column-gap: 35px;
-  font-family: "Gilroy";
+  font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 22px;
@@ -992,7 +986,7 @@ ul {
 
 
 .footer__adress {
-  font-family: "Open Sans";
+  font-family: "Open Sans", "Arial", sans-serif;
   color: var(--basic-white);
   font-style: normal;
   font-weight: 300;
@@ -1004,7 +998,7 @@ ul {
 
 .footer__phone {
   text-align: right;
-  font-family: "Open Sans";
+  font-family: "Open Sans", "Arial", sans-serif;
   color: var(--basic-white);
   font-style: normal;
   font-weight: 300;
@@ -1087,7 +1081,7 @@ ul {
 }
 
 .page-caption {
-  font-family: "Gilroy";
+  font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
   font-size: 47px;
   line-height: 58px;
@@ -1099,7 +1093,7 @@ ul {
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
-  font-family: "Open Sans";
+  font-family: "Open Sans", "Arial", sans-serif;
   font-weight: 300;
   font-size: 14px;
   line-height: 19px;
@@ -1144,7 +1138,7 @@ ul {
   padding-top: 25px;
   padding-bottom: 25px;
   background-color: var(--special-gray-catalog);
-  font-family: "Gilroy";
+  font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
   font-size: 16px;
   line-height: 20px;
@@ -1160,7 +1154,7 @@ ul {
   padding-bottom: 25px;
   padding-left: 72px;
   background-color: var(--basic-gray-light);
-  font-family: "Gilroy";
+  font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
   font-size: 16px;
   line-height: 20px;
@@ -1187,7 +1181,6 @@ ul {
   display: flex;
   justify-content: space-between;
   width: 50px;
-  background-color: lime;
   margin-left: auto;
 }
 
@@ -1231,13 +1224,12 @@ ul {
 }
 
 .filter-caption {
-  font-family: "Gilroy";
+  font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
   font-size: 14px;
   line-height: 17px;
   letter-spacing: 0.1em;
   width: 100%;
-  background-color: lawngreen;
   position: relative;
   padding: 0;
 }
@@ -1259,7 +1251,6 @@ ul {
 .range-controls {
   height: 20px;
   box-sizing: border-box;
-  background-color: royalblue;
   padding-top: 9px;
   position: relative;
   margin-top: 30px;
@@ -1301,7 +1292,7 @@ ul {
 
 .price-controls input {
   border: none;
-  background: #91C92F;
+  background: inherit;
   width: 40px;
   font: inherit;
   padding: 0;
@@ -1391,6 +1382,10 @@ ul {
   padding-left: 37px;
   padding-right: 38px;
 }
+
+label {
+  user-select: none;
+}
 /* === end catalog filter === */
 
 
@@ -1424,6 +1419,33 @@ ul {
   padding-left: 72px;
 }
 
+.catalog__product-item {
+  position: relative;
+}
+
+.catalog__product-link:hover img{
+  opacity: 0.7;
+}
+
+/* .catalog__product-item ~ a {
+  display: block;
+  position: relative;
+  padding: 0;
+} */
+
+
+
+/* .catalog__product-link:hover::after {
+  content: "";
+  display: block;
+  width: 360px;
+  height: 380px;
+  background-color: rgba(238, 238, 238, 70%);
+  position: absolute;
+  top: 0;
+  left: 0;
+} */
+
 .catalog__product-info {
   display: flex;
   justify-content: space-between;
@@ -1433,7 +1455,7 @@ ul {
 }
 
 .product__info-description {
-  font-family: "Gilroy";
+  font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 22px;
@@ -1441,7 +1463,7 @@ ul {
 }
 
 .product__info-price {
-  font-family: "Gilroy";
+  font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 300;
   font-size: 16px;
   line-height: 18px;
@@ -1449,7 +1471,28 @@ ul {
   margin: 0;
 }
 
+.catalog-button-product {
+  display: none;
+  width: 200px;
+  box-sizing: border-box;
+  padding-left: 37px;
+  position: absolute;
+  left: 77px;
+  top: 130px;
+  z-index: 2;
+}
 
+.button-compare {
+  display: none;
+  position: absolute;
+  left: 94px;
+  top: 220px;
+}
+
+.catalog__product-image-container:hover > .catalog-button-product,
+.catalog__product-image-container:hover >  .button-compare{
+  display: block;
+}
 
 /* catalog-pagination-container */
 .catalog-pagination-container {
@@ -1459,7 +1502,7 @@ ul {
   margin-left: 72px;
 
   background-color: var(--special-gray-light);
-  font-family: "Gilroy";
+  font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
   font-size: 16px;
   line-height: 20px;
@@ -1471,12 +1514,12 @@ ul {
   width: 300px;
   display: flex;
   justify-content: center;
-  outline: 1px solid salmon;
+  /* outline: 1px solid salmon; */
   margin-left: 140px;
 }
 
 .pagination__list a {
-  outline: 1px solid salmon;
+  /* outline: 1px solid salmon; */
   margin-right: 15px;
   margin-left: 15px;
 }
@@ -1488,3 +1531,137 @@ ul {
 /* === end catalog-pagination-container === */
 
 /* ====== end catalog-content ====== */
+
+
+/* modal */
+
+.modal {
+  width: 960px;
+  box-sizing: border-box;
+  background-color: var(--basic-white);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 50;
+  display: none;
+  padding-top: 92px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 69px;
+}
+
+.modal fieldset {
+  border: none;
+}
+
+.modal-visible {
+  display: block;
+}
+
+.modal-contacts__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal-contacts__item {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+
+}
+
+.modal-contacts__item:not(:nth-child(2n)) {
+  margin-right: 40px;
+}
+
+.modal-contacts__label {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+  margin-bottom: 10px;
+}
+
+.modal-contacts__input {
+  width: 320px;
+  height: 50px;
+  background-color: var(--ligth-gray-modal);
+  border: none;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.textarea-container {
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-user-text {
+  min-height: 167px;
+  padding: 16px 20px;
+
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  background-color: var(--ligth-gray-modal);
+  border: none;
+}
+
+.modal-send-button {
+  border: none;
+  z-index: 51;
+  background-color: inherit;
+  width: 200px;
+  margin: 0;
+  margin-top: 52px;
+}
+
+.modal-close-button {
+  display: block;
+  border: none;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background-color: var(--special-yellow);
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.modal-close-button::before {
+  content: "";
+  display: block;
+  width: 27px;
+  height: 2px;
+  background-color: var(--basic-white);
+  position: absolute;
+  top: center;
+  left: 14px;
+  transform: rotate(45deg);
+}
+
+.modal-close-button::after {
+  content: "";
+  display: block;
+  width: 27px;
+  height: 2px;
+  background-color: var(--basic-white);
+  position: absolute;
+  top: center;
+  left: 14px;
+  transform: rotate(-45deg);
+}
+
+/* === end modal === */
+
+
+
+

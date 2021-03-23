@@ -200,6 +200,7 @@
     </section>
 
     <section class="page__catalog layout-positioner">
+      <h2 class="visually-hidden">Наши товары</h2>
       <ul class="page__catalog-list">
         <li class="page__catalog-item">
           <a href="#">Виртуальная реальность</a>
@@ -246,7 +247,7 @@
                 заработаем, поднимая его на ваш этаж.
               </p>
             </div>
-            <img width="136" height="164" src="img/logo-services-delivery.svg">
+            <img width="136" height="164" src="img/logo-services-delivery.svg" alt="Доставка">
           </li>
           <li class="services__item services-warranty">
             <div class="services__text-container">
@@ -257,7 +258,7 @@
                 Товар, не дом, конечно же.
               </p>
             </div>
-            <img width="171" height="195" src="img/logo-services-warranty.svg">
+            <img width="171" height="195" src="img/logo-services-warranty.svg" alt="Гарантия">
           </li>
           <li class="services__item services-credit">
             <div class="services__text-container">
@@ -268,32 +269,33 @@
                 условия кредита. Выгодные для нашего банка, разумеется.
               </p>
             </div>
-            <img width="156" height="188" src="img/logo-services-credit.svg">
+            <img width="156" height="188" src="img/logo-services-credit.svg" alt="Кредит">
           </li>
         </ul>
       </div>
     </section>
 
     <section class="partners layout-positioner">
+      <h2 class="visually-hidden">Наши партнеры:</h2>
       <ul class="partners__list">
         <li class="partners__item">
           <a class="partners__item-link" href="#">
-            <img src="img/logo-partners-dji.png" width="260" height="100" alt="">
+            <img src="img/logo-partners-dji.png" width="260" height="100" alt="DJI">
           </a>
         </li>
         <li class="partners__item">
           <a class="partners__item-link" href="#">
-            <img src="img/logo-partners-spgadjects.png" width="260" height="100" alt="">
+            <img src="img/logo-partners-spgadjects.png" width="260" height="100" alt="SP-Gadjects">
           </a>
         </li>
         <li class="partners__item">
           <a class="partners__item-link" href="#">
-            <img src="img/logo-partners-gopro.png" width="260" height="100" alt="">
+            <img src="img/logo-partners-gopro.png" width="260" height="100" alt="Go-Pro">
           </a>
         </li>
         <li class="partners__item">
           <a class="partners__item-link" href="#">
-            <img src="img/logo-partners-vive.png" width="260" height="100" alt="">
+            <img src="img/logo-partners-vive.png" width="260" height="100" alt="ViVE">
           </a>
         </li>
       </ul>
@@ -323,7 +325,9 @@
           Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
           проверить работоспособность покупки. Всякое бывает.
         </p>
-        <img src="img/about-us-map.png" width="560" height="222" alt="Наш адрес: ул.Строителей 15">
+        <a href="https://goo.gl/maps/AiWptK6ANWb7utHH7">
+          <img src="img/about-us-map.png" width="560" height="222" alt="Наш адрес: ул.Строителей 15">
+        </a>
         <a class="button bold-text" href="#">Напишите нам</a>
       </div>
     </section>
@@ -332,7 +336,7 @@
   <footer class="main-footer">
     <div class="layout-positioner footer-wrapper-top">
       <a href="#">
-        <img src="img/logo-device-footer.svg">
+        <img src="img/logo-device-footer.svg" alt="Магазин Девайс">
       </a>
       <ul class="footer__user-nav">
         <li class="footer__user-link">
@@ -397,6 +401,32 @@
       </a>
     </div>
   </footer>
+
+  <div class="modal">
+    <h2 class="visually-hidden">Форма обратной связи</h2>
+    <form class="modal-form" action="https://echo.htmlacademy.ru" method="get">
+      <fieldset>
+        <ul class="modal-contacts__list">
+          <li class="modal-contacts__item">
+            <label class="modal-contacts__label" for="name">Ваше имя:</label>
+            <input class="modal-contacts__input" name="name" id="name" type="text" placeholder="Имя Фамилия">
+          </li>
+          <li class="modal-contacts__item">
+            <label class="modal-contacts__label" for="email">Ваш e-mail:</label>
+            <input class="modal-contacts__input" name="email" id="email" type="email" placeholder="email@example.com">
+          </li>
+        </ul>
+        <div class="textarea-container">
+          <label class="modal-contacts__label" for="user-message">Текст письма:</label>
+          <textarea class="modal-user-text" name="user-message" id="user-message" placeholder="В свободной форме"></textarea>
+        </div>
+        <button class="button modal-send-button bold-text" type="submit">отправить</button>
+        <button class="modal-close-button" type="button">
+          <span class="visually-hidden">Закрыть форму обратной связи</span>
+        </button>
+      </fieldset>
+    </form>
+  </div>
 </body>
 
 </html>

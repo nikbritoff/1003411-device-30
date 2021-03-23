@@ -195,8 +195,12 @@
           <div class="catalog__content">
             <ul class="catalog__product-list">
               <li class="catalog__product-item">
-                <a href="#">
-                  <img src="img/catalog-items/stick-nopro.jpg">
+                <a class="catalog__product-link" href="#">
+                  <div class="catalog__product-image-container">
+                    <img src="img/catalog-items/stick-nopro.jpg" alt="Небольшая селфи-палка" width="360" height="380">
+                    <a class="button catalog-button-product bold-text" href="#">В корзину</a>
+                    <a class="button-compare" href="#">Добавить к сравнению</a>
+                  </div>
                 </a>
                 <div class="catalog__product-info">
                   <a class="product__info-description" href="#">Любительская селфи-палка</a>
@@ -204,8 +208,12 @@
                 </div>
               </li>
               <li class="catalog__product-item">
-                <a href="#">
-                  <img src="img/catalog-items/stick-pro.jpg">
+                <a class="catalog__product-link" href="#">
+                  <div class="catalog__product-image-container">
+                    <img src="img/catalog-items/stick-pro.jpg" alt="Удобная селфи-палка" width="360" height="380">
+                    <a class="button catalog-button-product bold-text" href="#">В корзину</a>
+                    <a class="button-compare" href="#">Добавить к сравнению</a>
+                  </div>
                 </a>
                 <div class="catalog__product-info">
                   <a class="product__info-description" href="#">Профессиональная<br> селфи-палка</a>
@@ -213,8 +221,12 @@
                 </div>
               </li>
               <li class="catalog__product-item">
-                <a href="#">
-                  <img src="img/catalog-items/stick-unsinkable.png">
+                <a class="catalog__product-link" href="#">
+                <div class="catalog__product-image-container">
+                  <img src="img/catalog-items/stick-unsinkable.png" alt="Селфи-палка в водонепроницаемом корпусе желтого цвета" width="360" height="380">
+                  <a class="button catalog-button-product bold-text" href="#">В корзину</a>
+                  <a class="button-compare" href="#">Добавить к сравнению</a>
+                </div>
                 </a>
                 <div class="catalog__product-info">
                   <a class="product__info-description" href="#">Непотопляемая<br> селфи-палка</a>
@@ -222,8 +234,12 @@
                 </div>
               </li>
               <li class="catalog__product-item">
-                <a href="#">
-                  <img src="img/catalog-items/stick-follow-me.jpg">
+                <a class="catalog__product-link" href="#">
+                  <div class="catalog__product-image-container">
+                    <img src="img/catalog-items/stick-follow-me.jpg" alt="селфи-палка в форме руки" width="360" height="380">
+                    <a class="button catalog-button-product bold-text" href="#">В корзину</a>
+                    <a class="button-compare" href="#">Добавить к сравнению</a>
+                  </div>
                 </a>
                 <div class="catalog__product-info">
                   <a class="product__info-description" href="#">Селфи-палка «Следуй за<br> мной»</a>
@@ -255,7 +271,7 @@
     <footer class="main-footer">
       <div class="layout-positioner footer-wrapper-top">
         <a href="#">
-          <img src="img/logo-device-footer.svg">
+          <img src="img/logo-device-footer.svg" alt="Магазин Девайс">
         </a>
         <ul class="footer__user-nav">
           <li class="footer__user-link">
@@ -321,5 +337,30 @@
       </div>
     </footer>
 
+    <div class="modal">
+      <h2 class="visually-hidden">Форма обратной связи</h2>
+      <form class="modal-form" action="https://echo.htmlacademy.ru" method="get">
+        <fieldset>
+          <ul class="modal-contacts__list">
+            <li class="modal-contacts__item">
+              <label class="modal-contacts__label" for="name">Ваше имя:</label>
+              <input class="modal-contacts__input" name="name" id="name" type="text" placeholder="Имя Фамилия">
+            </li>
+            <li class="modal-contacts__item">
+              <label class="modal-contacts__label" for="email">Ваш e-mail:</label>
+              <input class="modal-contacts__input" name="email" id="email" type="email" placeholder="email@example.com">
+            </li>
+          </ul>
+          <div class="textarea-container">
+            <label class="modal-contacts__label" for="user-message">Текст письма:</label>
+            <textarea class="modal-user-text" name="user-message" id="user-message" placeholder="В свободной форме"></textarea>
+          </div>
+          <button class="button modal-send-button bold-text" type="submit">отправить</button>
+          <button class="modal-close-button" type="button">
+            <span class="visually-hidden">Закрыть форму обратной связи</span>
+          </button>
+        </fieldset>
+      </form>
+    </div>
 
   </body>

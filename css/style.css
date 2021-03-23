@@ -1406,7 +1406,6 @@ label {
 .catalog__content {
   box-sizing: border-box;
   width: 100%;
-  border: 1px solid salmon;
 }
 
 
@@ -1426,25 +1425,6 @@ label {
 .catalog__product-link:hover img{
   opacity: 0.7;
 }
-
-/* .catalog__product-item ~ a {
-  display: block;
-  position: relative;
-  padding: 0;
-} */
-
-
-
-/* .catalog__product-link:hover::after {
-  content: "";
-  display: block;
-  width: 360px;
-  height: 380px;
-  background-color: rgba(238, 238, 238, 70%);
-  position: absolute;
-  top: 0;
-  left: 0;
-} */
 
 .catalog__product-info {
   display: flex;
